@@ -1,0 +1,18 @@
+To start please open your terminal and go to the proper directory.  Then please run the command "make".
+
+To run the client, run this command in the terminal:
+./http_client [-p] IP/URL PORT_NUMBER
+
+The p is in [] because it is optional, it will print out the RTT after the GET request has been made.  IP/URL can be from any website of your choice, for example, www.google.com or www.example.com.  Make the port number always 80.
+
+To run the server, run this command in a new terminal in the same directory and run this command:
+./http_server PORT_NUMBER
+
+The only thing needed for this command is to make up a port number that the server and client will use to communicate with eachother.  For example, 
+./http_server 7890
+Once the server is running you can then go back to the client and run the command from the client side and see the server and client communicating.
+
+For example, I used the command: 
+./http_client -p linux.wpi.edu/TMDG.html 7890 
+* I did this after running the server command with the specified port number being 7890
+
